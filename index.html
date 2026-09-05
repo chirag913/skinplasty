@@ -14,10 +14,8 @@
 <meta property="og:title" content="SkinPlasty Clinic | Dermatologist &amp; Hair Transplant in Noida">
 <meta property="og:description" content="Led by Dr. Ankur Lal, MBBS, MD (Gold Medalist), AIIMS New Delhi. 4.9★ on Google. Three clinics across Noida &amp; Greater Noida.">
 <meta property="og:url" content="https://www.skinplasty.in/">
-<meta property="og:image" content="https://www.skinplasty.in/assets/img/main-logo/SkinPlast_png.png">
 <meta name="twitter:card" content="summary">
 <meta name="theme-color" content="#241A2B">
-<link rel="icon" href="https://www.skinplasty.in/assets/img/main-logo/SkinPlast_png.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,7 +87,7 @@ section{padding:76px 0}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
 .brand{display:flex;align-items:center;gap:11px;text-decoration:none}
 .brand img{height:38px;width:auto}
-.brand .fallback{
+.brand .wordmark{
   font-family:var(--display);font-size:1.5rem;color:var(--ink);letter-spacing:-.02em;line-height:1
 }
 .brand small{display:block;font-family:var(--sans);font-size:.66rem;color:var(--muted);font-weight:600;letter-spacing:.06em}
@@ -158,6 +156,10 @@ section{padding:76px 0}
   box-shadow:0 -6px 40px rgba(0,0,0,.22)
 }
 @media(min-width:960px){.card-doc{border-radius:20px 20px 0 0;padding:30px}}
+.card-eyebrow{
+  font-size:.78rem;font-weight:700;color:var(--plum);margin:0 0 14px;
+  padding-bottom:14px;border-bottom:1px solid var(--line)
+}
 .card-doc .photo{
   width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;background:#EFE7EC;margin-bottom:20px
 }
@@ -345,8 +347,8 @@ footer li{margin-bottom:9px}
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="#top">
-      <img src="https://www.skinplasty.in/assets/img/main-logo/SkinPlast_png.png" alt="SkinPlasty Clinic" onerror="this.remove()">
-      <span class="fallback">SkinPlasty<small>Skin · Hair · Aesthetics</small></span>
+      <!-- Logo image goes here later: <img src="/images/logo.png" alt="SkinPlasty Clinic"> -->
+      <span class="wordmark">SkinPlasty<small>Skin · Hair · Aesthetics</small></span>
     </a>
     <nav class="menu" aria-label="Main">
       <a href="#concerns">Concerns</a>
@@ -392,7 +394,8 @@ footer li{margin-bottom:9px}
       </div>
 
       <aside class="card-doc reveal">
-        <img class="photo" src="https://www.skinplasty.in/assets/img/feature/feature1.jpg" alt="Dr. Ankur Lal at SkinPlasty Clinic, Noida" loading="lazy" onerror="this.style.display='none'">
+        <!-- Doctor photo goes here later: <img class="photo" src="/images/dr-ankur-lal.jpg" alt="Dr. Ankur Lal"> -->
+        <p class="card-eyebrow">Your consulting dermatologist</p>
         <p class="doc-name">Dr. Ankur Lal</p>
         <p class="doc-qual">MBBS · MD Dermatology (Gold Medalist) · AIIMS New Delhi</p>
         <ul class="doc-list">
@@ -506,8 +509,9 @@ footer li{margin-bottom:9px}
         </div>
       </div>
       <div>
-        <img src="https://www.skinplasty.in/assets/img/slider/slider1.jpg" alt="SkinPlasty Clinic, Noida" style="width:100%;border-radius:18px;aspect-ratio:4/3;object-fit:cover;background:#EFE7EC" loading="lazy" onerror="this.style.display='none'">
-        <ul class="assure" style="margin-top:24px">
+        <!-- Clinic photo goes here later: <img src="/images/clinic.jpg" alt="SkinPlasty Clinic, Noida" style="width:100%;border-radius:18px;aspect-ratio:4/3;object-fit:cover"> -->
+        <p class="tag" style="margin-bottom:4px">Why patients choose SkinPlasty</p>
+        <ul class="assure">
           <li><span class="ic">✓</span><div><b>MD with Gold Medal</b><span>Top of his dermatology cohort</span></div></li>
           <li><span class="ic">✓</span><div><b>AIIMS New Delhi trained</b><span>Clinical training at India's leading institute</span></div></li>
           <li><span class="ic">✓</span><div><b>Procedures done by the doctor</b><span>Not handed over to a technician</span></div></li>
@@ -785,7 +789,6 @@ footer li{margin-bottom:9px}
       "url":"https://www.skinplasty.in/",
       "telephone":"+91-99716-96703",
       "email":"skinplasty@gmail.com",
-      "image":"https://www.skinplasty.in/assets/img/main-logo/SkinPlast_png.png",
       "priceRange":"₹₹",
       "address":{"@type":"PostalAddress","streetAddress":"CM-24, 2nd Floor, Sector 122, opposite DPS School","addressLocality":"Noida","addressRegion":"Uttar Pradesh","postalCode":"201316","addressCountry":"IN"},
       "geo":{"@type":"GeoCoordinates","latitude":28.5904469,"longitude":77.3979287},
